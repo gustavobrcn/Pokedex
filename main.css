@@ -91,6 +91,56 @@ body {
   animation-delay: 4.85s, 4s;
   /* display: none; */
 }
+
+.btn-layer {
+  border-radius: 50%;
+  /* STYLE BEFORE ANIMATION */
+  /* border: 30px solid black;
+  height: 260px;
+  width: 260px;
+  right: 40%;
+  bottom: 36%; */
+  /* ---------------- */
+  border: 15px solid black;
+  height: 65px;
+  width: 65px;
+  right: 47%;
+  bottom: 42%;
+  background: white;
+  position: absolute;
+  z-index: 3;
+  box-shadow: inset 0 0 0 2px black;
+  opacity: 0;
+  animation: grow1 1s forwards;
+  animation-delay: 6.25s;
+}
+
+.btn-layer, .btn-layer:before, .btn-layer:after {
+  content: "";
+  position: absolute;
+}
+
+.btn-layer:before {
+  background: #ffffff;
+  border-radius: 50%;
+  /*  STYLE BEFORE ANIMATION */
+  /* border: 2px solid black;
+  height: 35px;
+  width: 35px;
+  top: 20%;
+  right: 20%; */
+  /* --------------- */
+  border: 12px solid black;
+  height: 140px;
+  width: 140px;
+  top: 18%;
+  right: 18%;
+  position: absolute;
+  opacity: 0;
+  animation: grow2 1s forwards;
+  animation-delay: 6.25s;
+}
+
 /* ----------Animation---------- */
 @keyframes blink {
   from { background: #eee;}
@@ -131,4 +181,39 @@ body {
 @keyframes slide2 {
   from {right:-100%}
   to {right:-38%}
+}
+
+@keyframes grow1 {
+  from {
+    border: 15px solid black;
+    height: 65px;
+    width: 65px;
+    right: 47%;
+    bottom: 42%;
+    opacity: 0
+}
+
+  to {
+    width: 260px;
+    height: 260px;
+    right: 40%;
+    bottom: 36%;
+    border: 30px solid black;
+    opacity: 1}
+}
+
+@keyframes grow2 {
+  from {
+    border: 2px solid black;
+    height: 35px;
+    width: 35px;
+    opacity: 0;
+  }
+
+  to {
+    border: 12px solid black;
+    height: 140px;
+    width: 140px;
+    opacity: 1;
+  }
 }
