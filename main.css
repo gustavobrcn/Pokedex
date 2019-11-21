@@ -154,7 +154,7 @@ body {
   left: 32%;
   opacity: 0;
   animation: appear 1.5s forwards;
-  animation-delay: 7.5s;
+  animation-delay: 8.5s;
   /* display: none; */
 }
 
@@ -172,7 +172,7 @@ width: 50px;
 top: 9%;
 left: 9%;
 animation: glowing 2.5s infinite;
-animation-delay: 8.5s;
+animation-delay: 9.5s;
 }
 
 /* ----------Pokéball logo---------- */
