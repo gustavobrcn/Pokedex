@@ -1,3 +1,14 @@
+let startBtn = document.getElementById('start-btn')
+let trainerForm = document.getElementById('trainer-form')
+
+startBtn.addEventListener('click', () => {
+  trainerForm.style.opacity = 1
+})
+
+queryPokemonAPI = ()=> {
+
+}
+
 class Trainer {
   constructor(name) {
     this.name = name
@@ -20,17 +31,20 @@ class Trainer {
 class Pokemon {
   constructor(name) {
     this.name = name
-    this.hp =
-    this.atk =
-    this.def =
+    this.hp = null
+    this.atk = null
+    this.def = null
     this.abilities = []
+    this.priority = null
+    this.power = null
+    this.accuracy = null
+  }
+
+  addAbilities(array) {
+    this.abilites = [...array]
   }
 }
 
-
-
-let blazakin = new Pokemon('Blazakin')
-let squirtle = new Pokemon('Squirtle')
-let zapdos = new Pokemon('Zapdos')
-let arcticuno = new Pokemon('Arcticuno')
-let red = new Trainer('Red')
+let blaziken = new Pokemon ('Blaziken')
+let red = new Trainer ('Red')
+let moves = ['flame thrower', 'blaze kick', 'quick attack']
