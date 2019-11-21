@@ -11,7 +11,7 @@ body {
   transform: translate(-50%,-50%);
 }
 
-/* ----------Pokébal Styles---------- */
+/* ----------Pokéball Styles---------- */
 .pokeball {
   position: relative;
   width: 200px;
@@ -61,6 +61,36 @@ body {
   animation: blink .5s alternate 7;
 }
 
+/* ----------Pokéball Background---------- */
+.black-layer {
+  height: 100vh;
+  width: 80vw;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+  transform: skew(-20deg);
+  z-index: 0;
+  position: absolute;
+  right: -25%;
+  animation: appear 1.5s forwards,
+             slide1 2.85s;
+  animation-delay: 4.75s, 4s;
+  /* display: none; */
+}
+
+.red-layer {
+  height: 100vh;
+  width: 80vw;
+  background-color: rgb(168, 3, 13);
+  opacity: 0;
+  transform: skew(-20deg);
+  z-index: 1;
+  position: absolute;
+  right: -38%;
+  animation: appear 1.5s forwards,
+             slide2 2.85s;
+  animation-delay: 4.85s, 4s;
+  /* display: none; */
+}
 /* ----------Animation---------- */
 @keyframes blink {
   from { background: #eee;}
@@ -86,4 +116,19 @@ body {
 @keyframes disappear {
   from {opacity: 1}
   to {opacity: 0}
+}
+
+@keyframes appear {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes slide1 {
+  from {right:-100%}
+  to {right:-25%}
+}
+
+@keyframes slide2 {
+  from {right:-100%}
+  to {right:-38%}
 }
