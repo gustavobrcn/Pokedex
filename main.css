@@ -186,7 +186,7 @@ body {
   z-index: 3;
   left: 33.5%;
   top: 27%;
-  opacity: 0;
+  display: none;
 }
 #trainer-form .form-content {
   padding: 20px;
