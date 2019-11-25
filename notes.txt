@@ -1,4 +1,4 @@
-spread operator to add multiple moves from an array 
+spread operator to add multiple moves from an array
 // this will print {data: 'actual data'}
     // equivalent to...
     // let q = '';
@@ -24,3 +24,5 @@ spread operator to add multiple moves from an array
     // so you have a label for the output instead of just some random printing.
     // the above is a shortcut for {data: data}
     // log `data` so you know what's in it
+
+make development branch from master. then make a layout branch to write code

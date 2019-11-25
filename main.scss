@@ -181,7 +181,7 @@ animation-delay: 9.5s;
   position: absolute;
   background-color: #21c7ed;
   border-radius: 25px ;
-  border: 5px solid #2c97b0;
+  border: 10px solid #2c97b0;
   font-family: 'Alata';
   color: white;
   font-size: 32pt;
@@ -213,6 +213,7 @@ animation-delay: 9.5s;
   width: 165px;
   font-family: 'Alata';
   font-size: 16pt;
+  cursor: pointer;
 }
 
   ::placeholder {
@@ -225,8 +226,48 @@ animation-delay: 9.5s;
 
 //----------Trainer----------
 #trainer-icons {
+  position: absolute;
+  background-color: #21c7ed;
+  border-radius: 25px ;
+  border: 10px solid #2c97b0;
+  font-family: 'Alata';
+  color: white;
+  font-size: 32pt;
+  height: 560px;
+  width: 845px;
+  z-index: 3;
+  left: 33.5%;
+  top: 27%;
+  align-items: center;
+  font-size: 36pt;
   display: none;
+
+    p {
+      padding-left: 40px;
+    }
+
+  .icons {
+    display: grid;
+    grid-template: repeat(2, 48%) / repeat(4, 24%);
+    grid-gap: 10px;
+    margin: 8%;
+    position: absolute;
+    top:13%;
+
+    .trainers {
+      height: 150px;
+      width: 150px;
+      border-radius: 25px;
+      border: 10px solid white;
+      cursor: pointer;
+
+      .trainers {
+        opacity: 0;
+      }
+    }
+  }
 }
+
 
 //----------Pokemon Form---------
 #pokemon-form {
