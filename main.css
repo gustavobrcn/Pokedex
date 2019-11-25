@@ -215,6 +215,14 @@ body {
   padding-left: 30px;
 }
 
+#trainer-icons {
+  display: none;
+}
+
+#pokemon-form {
+  display: none;
+}
+
 /* ----------Pokéball logo---------- */
 #logo {
   height: 10%;
