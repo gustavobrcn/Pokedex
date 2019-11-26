@@ -10,19 +10,16 @@
     <title></title>
   </head>
   <body>
-
     <div class="center-on-page">
       <div class="pokeball">
       <div class="pokeball__button"></div>
       </div>
     </div>
-
     <div id="pokeball-background">
       <div class="black-layer"></div>
       <div class="red-layer"></div>
       <div class="btn-layer"></div>
     </div>
-
     <form id='trainer-form'>
       <div class="form-content">
       Hello there Trainer! <br>Before we get started, tell us your name.<br>
@@ -30,7 +27,6 @@
       <input id='trainer-btn' type="submit" name="create-trainer" value="Create Trainer">
     </div>
   </form>
-
     <div id="trainer-icons">
       <p>Please select a trainer icon</p>
       <div class="icons">
@@ -44,27 +40,14 @@
         <img src="images/pokemon_trainers/trainer_icons8.jpg" id='trainer8' class='trainers'>
       </div>
     </div>
-
-    <div id="display-team">
-      <h3 id='trainer-name'></h3>
-      <img src="images/pokemon_trainers/trainer_icons1.jpg" id='trainer-pic' class='trainers'>
+    <div class="display-team">
       <form id="pokemon-form">
         <div class="pokemon-form-content">
-        <input id='pokemon-input' type="text" name="pokemon-name" placeholder="Pokemon Name or ID">
-        <input id='pokemon-btn'type="submit" name="add-pokemon" value="Add Pokemon">
-      </div>
+          <input type="text" name="pokemon-name" placeholder="Pokemon Name or ID">
+          <input type="submit" name="add-pokemon" value="Add Pokemon">
+        </div>
       </form>
-      <div id="pokemon-team">
-      </div>
-    </div>
-
-    <div id="display-pokemon">
-      <img class='pokemon-info' src="" alt="">
-      <div class="pokemon-stats">
-        <h3 class="pokemon-info"></h3>
-        <h3 class='pokemon-info'></h3>
-        <h3 class="pokemon-info"></h3>
-        <h3 class="pokemon-info"></h3>
+      <div class="pokemon-team">
       </div>
     </div>
     <a href="#"><div id='start-btn'></div></a>
